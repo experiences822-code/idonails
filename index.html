@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f0e8" />
+  <meta name="description" content="NÁCAR BEAUTY — Spa, belleza y distribuidora de productos profesionales." />
+  <title>NÁCAR BEAUTY | Spa · Beauty · Distribuidora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">UN ESPACIO PARA CUIDARTE · SERVICIOS DE BELLEZA Y PRODUCTOS PROFESIONALES</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Nácar Beauty inicio">
+      <span class="brand-mark">N</span>
+      <span><strong>NÁCAR</strong><small>BEAUTY · SPA · SUPPLY</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav id="mainNav">
+      <a href="#servicios">Servicios</a>
+      <a href="#distribuidora">Distribuidora</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+      <a class="nav-cta" href="#reservar">Agendar cita</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">BELLEZA · BIENESTAR · AUTOCUIDADO</p>
+        <h1>Tu belleza,<br><em>nuestro arte.</em></h1>
+        <p class="hero-text">Un espacio para renovar tu energía, expresar tu estilo y encontrar productos que acompañan tu cuidado personal y profesional.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#reservar">Reserva tu experiencia</a>
+          <a class="text-link" href="#distribuidora">Explorar productos ↗</a>
+        </div>
+        <div class="hero-note"><span class="sparkle">✦</span> Cuidado personalizado, resultados que se sienten.</div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1200&q=85" alt="Interior elegante de un salón de belleza">
+        <div class="image-caption"><span>01 / BEAUTY EXPERIENCE</span><strong>Un momento para vos.</strong></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>01</strong><span>Atención personalizada</span></div>
+      <div><strong>02</strong><span>Productos seleccionados</span></div>
+      <div><strong>03</strong><span>Profesionales de belleza</span></div>
+      <div><strong>04</strong><span>Bienestar integral</span></div>
+    </section>
+
+    <section class="section services-section" id="servicios">
+      <div class="section-heading">
+        <div><p class="eyebrow">NUESTROS SERVICIOS</p><h2>Tu ritual de <em>bienestar.</em></h2></div>
+        <p>Elegí el servicio que necesitás y reservá tu espacio. Cada experiencia está pensada para resaltar tu belleza y hacerte sentir bien.</p>
+      </div>
+      <div class="service-grid" id="serviceGrid"></div>
+    </section>
+
+    <section class="distributor-section" id="distribuidora">
+      <div class="distributor-image">
+        <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1100&q=85" alt="Productos de cuidado de la piel">
+      </div>
+      <div class="distributor-copy">
+        <p class="eyebrow">NÁCAR BEAUTY SUPPLY</p>
+        <h2>Tu belleza también<br>se lleva <em>a casa.</em></h2>
+        <p>Descubrí una selección de productos para el cuidado personal y el trabajo de profesionales de la belleza.</p>
+        <ul class="check-list">
+          <li>Skincare y cuidado corporal</li>
+          <li>Productos para uñas y cabello</li>
+          <li>Maquillaje y accesorios</li>
+          <li>Herramientas e insumos profesionales</li>
+        </ul>
+        <a class="button button-outline" href="#catalogo">Ver catálogo</a>
+      </div>
+    </section>
+
+    <section class="section catalog-section" id="catalogo">
+      <div class="section-heading">
+        <div><p class="eyebrow">BEAUTY SUPPLY</p><h2>Selección <em>destacada.</em></h2></div>
+        <p>Un catálogo inicial para exhibir productos, precios y disponibilidad. Los artículos son demostrativos y se pueden reemplazar por el inventario real.</p>
+      </div>
+      <div class="catalog-toolbar">
+        <div class="filter-pills" id="categoryFilters">
+          <button class="filter-pill active" data-category="Todos">Todos</button>
+          <button class="filter-pill" data-category="Skincare">Skincare</button>
+          <button class="filter-pill" data-category="Cabello">Cabello</button>
+          <button class="filter-pill" data-category="Uñas">Uñas</button>
+          <button class="filter-pill" data-category="Maquillaje">Maquillaje</button>
+        </div>
+        <span class="cart-indicator">Bolsa <b id="cartCount">0</b></span>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="quote-band" id="nosotros">
+      <p class="eyebrow">LA FILOSOFÍA NÁCAR</p>
+      <h2>La belleza no es cambiar quién sos.<br><em>Es celebrar quién sos.</em></h2>
+      <p>Creemos en el autocuidado como una forma de bienestar, expresión y confianza.</p>
+    </section>
+
+    <section class="section values-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">LO QUE NOS DEFINE</p><h2>Nuestros <em>valores.</em></h2></div>
+      </div>
+      <div class="values-grid">
+        <article><span>✦</span><h3>Calidad</h3><p>Elegimos cuidadosamente cada servicio y producto que ofrecemos.</p></article>
+        <article><span>♡</span><h3>Bienestar</h3><p>Promovemos experiencias que te permitan dedicarte tiempo.</p></article>
+        <article><span>✧</span><h3>Confianza</h3><p>Construimos relaciones cercanas, honestas y transparentes.</p></article>
+        <article><span>❋</span><h3>Profesionalismo</h3><p>Trabajamos con compromiso, técnica y atención al detalle.</p></article>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="section-heading">
+        <div><p class="eyebrow">NUESTRO UNIVERSO</p><h2>Inspiración <em>en cada detalle.</em></h2></div>
+        <p>Esta galería se actualizará con fotografías reales del local, trabajos, equipo y productos.</p>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=800&q=85" alt="Manicura profesional">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=85" alt="Estilismo de cabello">
+        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800&q=85" alt="Maquillaje y belleza">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=85" alt="Diseño de uñas">
+      </div>
+    </section>
+
+    <section class="booking-section" id="reservar">
+      <div class="booking-intro">
+        <p class="eyebrow">RESERVAS ONLINE</p>
+        <h2>Tu próximo momento<br>empieza <em>acá.</em></h2>
+        <p>Completá tus datos y elegí el servicio, fecha y horario que preferís. En esta primera versión la reserva queda guardada en este navegador y se prepara un mensaje para confirmar por WhatsApp.</p>
+        <div class="booking-perks"><span>✦ Fácil y rápido</span><span>✦ Atención personalizada</span><span>✦ Confirmación directa</span></div>
+      </div>
+      <form class="booking-form" id="bookingForm">
+        <h3>Solicitar una cita</h3>
+        <div class="form-row">
+          <label>Nombre completo<input name="name" type="text" placeholder="Tu nombre" required></label>
+          <label>WhatsApp<input name="phone" type="tel" placeholder="Tu número" required></label>
+        </div>
+        <label>Correo electrónico <span class="optional">(opcional)</span><input name="email" type="email" placeholder="tunombre@email.com"></label>
+        <label>Servicio<select name="service" id="bookingService" required><option value="">Seleccioná un servicio</option></select></label>
+        <div class="form-row">
+          <label>Fecha<input name="date" id="bookingDate" type="date" required></label>
+          <label>Horario<select name="time" required><option value="">Elegí horario</option><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option></select></label>
+        </div>
+        <label>Notas <span class="optional">(opcional)</span><textarea name="notes" rows="3" placeholder="Contanos si tenés alguna preferencia..."></textarea></label>
+        <button class="button button-dark full-button" type="submit">Solicitar reserva</button>
+        <p class="form-disclaimer">La cita queda pendiente hasta que el equipo confirme disponibilidad.</p>
+        <p class="form-message" id="bookingMessage" role="status"></p>
+      </form>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div><p class="eyebrow">ESTAMOS PARA VOS</p><h2>Hablemos de <em>belleza.</em></h2></div>
+      <div class="contact-details">
+        <p><span>Ubicación</span>Agregá aquí la dirección del establecimiento</p>
+        <p><span>Horario</span>Configurá aquí los días y horarios de atención</p>
+        <p><span>WhatsApp</span>Configurá tu número comercial en app.js</p>
+      </div>
+      <a class="button button-light" id="whatsappLink" href="#" target="_blank" rel="noopener">Escribinos por WhatsApp ↗</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand-footer" href="#inicio"><span class="brand-mark">N</span><span><strong>NÁCAR</strong><small>BEAUTY · SPA · SUPPLY</small></span></a>
+    <p>Tu belleza, nuestro arte.</p>
+    <small>© <span id="year"></span> NÁCAR BEAUTY. Todos los derechos reservados.</small>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
